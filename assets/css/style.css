@@ -1,3 +1,31 @@
-body {
-    background-color: beige;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+.main {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #FA2F6C;
+
+}
+
+.inner-div {
+    background-color: #f9c300;
+    width: 40vw;
+    border-radius: 1rem;
+    padding: 3rem 8rem;
+    box-shadow: 0 1rem 1 rem -0.7rem rgba(0, 0, 0, 0.4);
 }
