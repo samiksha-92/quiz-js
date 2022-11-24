@@ -29,3 +29,50 @@ html {
     padding: 3rem 8rem;
     box-shadow: 0 1rem 1 rem -0.7rem rgba(0, 0, 0, 0.4);
 }
+
+.inner-div h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-top: 1rem 0 4rem 0;
+}
+
+.inner-div li {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    list-style: none;
+
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+#submit,
+.btn {
+    padding: 1rem 3rem;
+    border-style: none;
+    outline: none font-size 2rem;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    background-color: palevioletred;
+    color: black;
+    margin-top: 4rem;
+
+}
+
+#submit:hover {
+    background-color: #FA2F6C;
+}
+
+#display_score {
+    background-color: palevioletred;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1 rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+.display_score_area {
+    display: none;
+}
