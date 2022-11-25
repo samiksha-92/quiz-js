@@ -1,4 +1,14 @@
-let quiz_DB = [
+/** Caching the DOM **/
+
+let submit_button = document.querySelector("#submit");
+let question = document.querySelector(".questions");
+let option_1 = document.querySelector("#question_option_one");
+let option_2 = document.querySelector("#question_option_two");
+let option_3 = document.querySelector("#question_option_three");
+let option_4 = document.querySelector("#question_option_four");
+
+
+const quiz_DB = [
 
     {
         question: “Q1: Which is the smallest ocean in the world ? ”,
