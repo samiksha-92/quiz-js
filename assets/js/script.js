@@ -50,6 +50,10 @@ const quiz_DB = [
 
 let first_Question_Load = () => {
     question.innerText = quiz_DB[0].question;
+    option_1.innerText = quiz_DB[0].a;
+    option_2.innerText = quiz_DB[0].b;
+    option_3.innerText = quiz_DB[0].c;
+    option_4.innerText = quiz_DB[0].d
 
 }
 
