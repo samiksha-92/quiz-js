@@ -1,5 +1,6 @@
 /** Caching the DOM **/
 
+let options = document.querySelectorAll(".options");
 let submit_button = document.querySelector("#submit");
 let question = document.querySelector(".questions");
 let option_1 = document.querySelector("#question_option_one");
@@ -48,7 +49,7 @@ const quiz_DB = [
 ];
 
 
-let first_Question_Load = () => {
+let firstQuestionLoad = () => {
     question.innerText = quiz_DB[0].question;
     option_1.innerText = quiz_DB[0].a;
     option_2.innerText = quiz_DB[0].b;
@@ -58,6 +59,25 @@ let first_Question_Load = () => {
 }
 
 
+firstQuestionLoad();
 
 
-first_Question_Load();
+let getCorrectAnswer = () => {
+    let answer;
+    options.forEach((option) => {
+        if (option.checked) {
+            answer = option.id
+        }
+
+    });
+    return answer;
+};
+
+
+
+
+
+submit_button.addEventListener("click", () => {
+    let correctAnswer = getCorrectAnswer();
+    console.log(correctAnswer);
+});
