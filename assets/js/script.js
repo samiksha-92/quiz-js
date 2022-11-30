@@ -1,5 +1,5 @@
 /** Caching the DOM **/
-
+let userScore = 0;
 let options = document.querySelectorAll(".options");
 let submit_button = document.querySelector("#submit");
 let question = document.querySelector(".questions");
@@ -7,6 +7,8 @@ let option_1 = document.querySelector("#question_option_one");
 let option_2 = document.querySelector("#question_option_two");
 let option_3 = document.querySelector("#question_option_three");
 let option_4 = document.querySelector("#question_option_four");
+let questionNumber = 0
+
 
 
 const quiz_DB = [
@@ -50,16 +52,16 @@ const quiz_DB = [
 
 
 let firstQuestionLoad = () => {
-    question.innerText = quiz_DB[0].question;
-    option_1.innerText = quiz_DB[0].a;
-    option_2.innerText = quiz_DB[0].b;
-    option_3.innerText = quiz_DB[0].c;
-    option_4.innerText = quiz_DB[0].d
+    question.innerText = quiz_DB[questionNumber].question;
+    option_1.innerText = quiz_DB[questionNumber].a;
+    option_2.innerText = quiz_DB[questionNumber].b;
+    option_3.innerText = quiz_DB[questionNumber].c;
+    option_4.innerText = quiz_DB[questionNumber].d
 
 }
 
 
-firstQuestionLoad();
+
 
 
 let getCorrectAnswer = () => {
@@ -73,11 +75,18 @@ let getCorrectAnswer = () => {
     return answer;
 };
 
-
-
-
-
 submit_button.addEventListener("click", () => {
     let correctAnswer = getCorrectAnswer();
     console.log(correctAnswer);
+
+    if (correctAnswer === quiz_DB[0].ans) {
+        userScore += 1
+    };
+
+    questionNumber += 1
+    if (questionNumber < quiz_DB.length) {
+        firstQuestionLoad();
+    }
 });
+
+firstQuestionLoad();
