@@ -48,8 +48,60 @@ const quiz_DB = [
         c: "Malaysia",
         d: "Srilanka",
         ans: "ans1"
-    }
+    },
+
+    {
+        question: "Q5: Emu Bird is found in which country ?",
+        a: "Australia",
+        b: "New Zealand",
+        c: "Japan",
+        d: "Srilanka",
+        ans: "ans1"
+    },
+
+    {
+        question: "Q6: In which country the tallest water Angel Falls is located ?",
+        a: "Venezuela",
+        b: "United States",
+        c: "Peru",
+        d: "Norway",
+        ans: "ans1"
+    },
+
+    {
+        question: "Q7: Which country has the most number of lakes ?",
+        a: "Canada",
+        b: "India",
+        c: "Brazil",
+        d: "Finland",
+        ans: "ans1"
+    },
+    {
+        question: "Q8: In which country Yellowstone National Park is located ?",
+        a: "Russia",
+        b: "Canada",
+        c: "Brazil",
+        d: "United States",
+        ans: "ans4"
+    },
+    {
+        question: "Q9: Which is the longest continental mountain range in the world ?",
+        a: "The Himalaya ",
+        b: "Andes",
+        c: "Rocky Mountains",
+        d: "Srilanka",
+        ans: "ans2"
+    },
+    {
+        question: "Q10: Which country is known as the land of Tulips ?",
+        a: "The Netherlands",
+        b: "Italy",
+        c: "Switzerland",
+        d: "Russia",
+        ans: "ans1"
+    },
 ];
+
 
 
 let firstQuestionLoad = () => {
@@ -90,7 +142,7 @@ submit_button.addEventListener("click", () => {
     } else {
         displayUserScore.classList.remove('hideScoreArea');
         displayUserScore.innerHTML = `
-        <h3> You scored ${userScore} out of 4 😊</h3>
+        <h3> You scored ${userScore} out of 10 😊</h3>
         <button class = "displayUserScoreButton" onclick = "location.reload()"> Play Again </button> 
         `
 

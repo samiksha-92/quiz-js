@@ -13,6 +13,8 @@ html {
 
 }
 
+
+
 .main {
     min-width: 100vw;
     min-height: 100vh;
@@ -20,6 +22,14 @@ html {
     place-items: center;
     background-color: #FA2F6C;
 
+}
+
+.heading {
+    text-align: center;
+    align-self: center;
+    margin: 1rem auto;
+    font-size: xxx-large;
+    font-weight: bolder;
 }
 
 .inner-div {
