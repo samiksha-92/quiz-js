@@ -1,5 +1,6 @@
 /** Caching the DOM **/
 let userScore = 0;
+let displayUserScore = document.querySelector("#display_score");
 let options = document.querySelectorAll(".options");
 let submit_button = document.querySelector("#submit");
 let question = document.querySelector(".questions");
@@ -79,14 +80,21 @@ submit_button.addEventListener("click", () => {
     let correctAnswer = getCorrectAnswer();
     console.log(correctAnswer);
 
-    if (correctAnswer === quiz_DB[0].ans) {
+    if (correctAnswer === quiz_DB[questionNumber].ans) {
         userScore += 1
     };
 
     questionNumber += 1
     if (questionNumber < quiz_DB.length) {
         firstQuestionLoad();
-    }
+    } else {
+        displayUserScore.classList.remove('hideScoreArea');
+        displayUserScore.innerHTML = `
+        <h3> You scored ${userScore} out of 4 😊</h3>
+        <button class = "displayUserScoreButton" onclick = "location.reload()"> Play Again </button> 
+        `
+
+    };
 });
 
 firstQuestionLoad();
