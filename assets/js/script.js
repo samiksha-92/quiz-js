@@ -8,7 +8,7 @@ let option_1 = document.querySelector("#question_option_one");
 let option_2 = document.querySelector("#question_option_two");
 let option_3 = document.querySelector("#question_option_three");
 let option_4 = document.querySelector("#question_option_four");
-let questionNumber = 0
+let questionNumber = 0;
 
 
 
@@ -109,9 +109,9 @@ let firstQuestionLoad = () => {
     option_1.innerText = quiz_DB[questionNumber].a;
     option_2.innerText = quiz_DB[questionNumber].b;
     option_3.innerText = quiz_DB[questionNumber].c;
-    option_4.innerText = quiz_DB[questionNumber].d
+    option_4.innerText = quiz_DB[questionNumber].d;
 
-}
+};
 
 
 
@@ -121,7 +121,7 @@ let getCorrectAnswer = () => {
     let answer;
     options.forEach((option) => {
         if (option.checked) {
-            answer = option.id
+            answer = option.id;
         }
 
     });
@@ -133,10 +133,10 @@ submit_button.addEventListener("click", () => {
     console.log(correctAnswer);
 
     if (correctAnswer === quiz_DB[questionNumber].ans) {
-        userScore += 1
+        userScore += 1;
     };
 
-    questionNumber += 1
+    questionNumber += 1;
     if (questionNumber < quiz_DB.length) {
         firstQuestionLoad();
     } else {
