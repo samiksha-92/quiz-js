@@ -96,6 +96,7 @@ input:hover {
 #progress_bar_full {
     height: 3.4rem;
     background-color: #00EDFE;
+    width: 0%;
 
 }
 

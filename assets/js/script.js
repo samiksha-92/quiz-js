@@ -1,5 +1,6 @@
 /** Caching the DOM **/
 let progressText = document.querySelector("#progressText");
+let actualProgressSBar = document.querySelector("#progress_bar_full");
 let userScore = 0;
 let displayUserScore = document.querySelector("#display_score");
 let options = document.querySelectorAll(".options");
@@ -108,7 +109,9 @@ const quiz_DB = [
 
 
 let firstQuestionLoad = () => {
-    progressText.innerText = ` Question:${actualQuestionNumber}/${totalQuestions}`;
+    progressText.innerText = ` Question:${actualQuestionNumber} / ${totalQuestions}`;
+    actualProgressSBar.style.width = `${(actualQuestionNumber/totalQuestions)* 100}%
+    `;
     question.innerText = quiz_DB[questionNumber].question;
     option_1.innerText = quiz_DB[questionNumber].a;
     option_2.innerText = quiz_DB[questionNumber].b;
