@@ -1,4 +1,5 @@
 /** Caching the DOM **/
+let progressText = document.querySelector("#progressText");
 let userScore = 0;
 let displayUserScore = document.querySelector("#display_score");
 let options = document.querySelectorAll(".options");
@@ -9,6 +10,8 @@ let option_2 = document.querySelector("#question_option_two");
 let option_3 = document.querySelector("#question_option_three");
 let option_4 = document.querySelector("#question_option_four");
 let questionNumber = 0;
+let actualQuestionNumber = 1;
+let totalQuestions = 10;
 
 
 
@@ -105,6 +108,7 @@ const quiz_DB = [
 
 
 let firstQuestionLoad = () => {
+    progressText.innerText = ` Question:${actualQuestionNumber}/${totalQuestions}`;
     question.innerText = quiz_DB[questionNumber].question;
     option_1.innerText = quiz_DB[questionNumber].a;
     option_2.innerText = quiz_DB[questionNumber].b;
@@ -137,12 +141,14 @@ submit_button.addEventListener("click", () => {
     };
 
     questionNumber += 1;
+    actualQuestionNumber += 1;
+
     if (questionNumber < quiz_DB.length) {
         firstQuestionLoad();
     } else {
         displayUserScore.classList.remove('hideScoreArea');
         displayUserScore.innerHTML = `
-        <h3> You scored ${userScore} out of 10 😊</h3>
+        <h3> You scored ${userScore} out of ${totalQuestions} 😊</h3>
         <button class = "displayUserScoreButton" onclick = "location.reload()"> Play Again </button> 
         `
 
