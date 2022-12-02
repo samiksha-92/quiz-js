@@ -52,5 +52,12 @@ After that the user is taken to the next question.
 6. As a first time user, I would like to have an option to restart the game if I feel to do so, at the end of each round.
 (Please Note: Each round has 10 questions)
 
+- **Testing:**
+
+The W3C Markup Validator, W3C CSS Validator Services and JShint were used to validate the code on this application.
+ 
+ 1. <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fsamiksha-92.github.io%2Fquiz-js%2F" target ="_blank"> There were was error found in the beginning, the main div had a missing closing element. This was resolved upon final testing there were no errors or warnings.</a>
+ 2. 
+
 
 
