@@ -149,7 +149,7 @@ submit_button.addEventListener("click", () => {
     if (questionNumber < quiz_DB.length) {
         firstQuestionLoad();
     } else {
-        submit_button.classList.add('removeSubmitButton');
+
         displayUserScore.classList.remove('hideScoreArea');
         submit_button.innerHTML = `
         <h3> Thanks for playing!</h3>`
