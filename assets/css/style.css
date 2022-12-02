@@ -61,7 +61,8 @@ input:hover {
 .displayUserScoreButton {
     padding: 1rem 3rem;
     border-style: none;
-    outline: none font-size 2rem;
+    outline: none;
+    font-size: 2rem;
     font-weight: 400;
     display: block;
     margin: auto;
