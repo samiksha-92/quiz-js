@@ -58,7 +58,7 @@ The W3C Markup Validator, W3C CSS Validator Services and JShint were used to val
  
  1. <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fsamiksha-92.github.io%2Fquiz-js%2F" target ="_blank"> There were was error found in the beginning, the main div had a missing closing element. This was resolved upon final testing there were no errors or warnings.</a>
  2. <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsamiksha-92.github.io%2Fquiz-js%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target ="_blank"> These were the results of the W3C CSS Validator. All significant errors were resolved. </a>
- 3. <a href = "https://jshint.com/" target = "_blank"> No errors were found upon final testing.</a>
+ 3. <a href = "https://jshint.com/" target = "_blank"> No errors were found upon final testing using jshint.</a>
  4. All user stories were thoroughly tested and validated against their expected outcomes. No errors were found.
  5. No media queries were used in CSS styling. However, the application tested well across all major media devices such as:
  - ipad Air
