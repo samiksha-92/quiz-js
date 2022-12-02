@@ -57,7 +57,74 @@ After that the user is taken to the next question.
 The W3C Markup Validator, W3C CSS Validator Services and JShint were used to validate the code on this application.
  
  1. <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fsamiksha-92.github.io%2Fquiz-js%2F" target ="_blank"> There were was error found in the beginning, the main div had a missing closing element. This was resolved upon final testing there were no errors or warnings.</a>
- 2. 
+ 2. <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsamiksha-92.github.io%2Fquiz-js%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target ="_blank"> These were the results of the W3C CSS Validator. All significant errors were resolved. </a>
+ 3. <a href = "https://jshint.com/" target = "_blank"> No errors were found upon final testing.</a>
+ 4. All user stories were thoroughly tested and validated against their expected outcomes. No errors were found.
+ 5. No media queries were used in CSS styling. However, the application tested well across all major media devices such as:
+ - ipad Air
+ - ipad Mini
+ - iPhone 12 Pro
+ - Pixel 5
+ - MacBook Pro
 
+ ## **Deployment**
+<hr>
+
+The website was deployed using Github pages using the following steps:
+
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.</li>
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+<br>
+## **Forking the Github Repository**
+<hr>
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps below:
+
+1. Log in to GitHub and locate the GitHub Repositor.
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+<br>
+
+## **Making a Local Clone**
+
+1. Log in to GitHub and locate the <a href="https://github.com/samiksha-92/rps-game" target="_blank">Github Repository</a>
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", and copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type <code>git clone </code>, and then paste the url copied in step 3. 
+<code>$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</code>
+
+Press Enter. Your local clone will be created.<br>
+<code> $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done. <br>
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+</code>
+<br>
+<a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop" target="_blank"> Click here</a> to see detailed instructions with images.
+
+## **Code**
+- The understanding of reload function code was made possible using <a href = "https://www.w3schools.com/jsref/met_loc_reload.asp" target ="_blank">W3Schools.
+- A lot of understanding of Javascript concepts on this project was made possible thanks to <a href = "https://www.youtube.com/c/CodeWithHarry" target ="_blank"> this Youtube channel </a>
+
+
+## **Content**
+
+- The content(questions) on this application was provided by <a href = "https://www.edudwar.com/world-gk-quiz-questions-and-answers/" target = "_blank"> this website. </a>
+
+### **Acknowledgements**
+
+-  My mentor Jack Wachira for continuous feedback and suggestions for improvements on my projectwork. 
+- My husband Dushyant Sabharwal for his support and feedback on my projectwork.
+
+ 
 
 
