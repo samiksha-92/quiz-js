@@ -150,7 +150,7 @@ submit_button.addEventListener("click", () => {
         firstQuestionLoad();
     } else {
         displayUserScore.classList.remove('hideScoreArea');
-        submit_button.classList.remove("#submit");
+        submit_button.classList.add('removeSubmitButton');
         displayUserScore.innerHTML = `
         <h3> You scored ${userScore} out of ${totalQuestions} 😊</h3>
         <button class = "displayUserScoreButton" onclick = "location.reload()"> Play Again </button> 
