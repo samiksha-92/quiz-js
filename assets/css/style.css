@@ -87,6 +87,10 @@ input:hover {
     display: none;
 }
 
+.removeSubmitButton {
+    display: none;
+}
+
 #progress_bar {
     height: 4rem;
     width: 20rem;
